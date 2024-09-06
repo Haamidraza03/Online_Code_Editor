@@ -19,7 +19,6 @@ var jsEditor = CodeMirror.fromTextArea(document.getElementById("js-editor"), {
     mode: "javascript",
     lineNumbers: true,
     autoCloseBrackets: true,
-    theme: "default",
     extraKeys: {"Ctrl-Space": "autocomplete"}
 });
 
