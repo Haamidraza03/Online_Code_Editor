@@ -22,7 +22,10 @@ var jsEditor = CodeMirror.fromTextArea(document.getElementById("js-editor"), {
     extraKeys: {"Ctrl-Space": "autocomplete"}
 });
 
-//update the preview
+// Display the HTML editor by default
+document.getElementById("b1").click();
+
+// Function to update the preview
 function updatePreview() {
     var htmlContent = htmlEditor.getValue();
     var cssContent = `<style>${cssEditor.getValue()}</style>`;
@@ -35,6 +38,30 @@ function updatePreview() {
     preview.write(htmlContent + cssContent + jsContent);
     preview.close();
 }
+
+// Show HTML editor and hide others
+document.getElementById("b1").addEventListener("click", function() {
+    document.getElementById("html").classList.remove("d-none");
+    document.getElementById("css").classList.add("d-none");
+    document.getElementById("js").classList.add("d-none");
+    htmlEditor.refresh();
+});
+
+// Show CSS editor and hide others
+document.getElementById("b2").addEventListener("click", function() {
+    document.getElementById("html").classList.add("d-none");
+    document.getElementById("css").classList.remove("d-none");
+    document.getElementById("js").classList.add("d-none");
+    cssEditor.refresh();
+});
+
+// Show JS editor and hide others
+document.getElementById("b3").addEventListener("click", function() {
+    document.getElementById("html").classList.add("d-none");
+    document.getElementById("css").classList.add("d-none");
+    document.getElementById("js").classList.remove("d-none");
+    jsEditor.refresh();
+});
 
 htmlEditor.on("change", updatePreview);
 cssEditor.on("change", updatePreview);

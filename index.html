@@ -10,16 +10,27 @@
 </head>
 <body class="bg-dark text-info">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 mb-3">
+        <div class="row justify-content-evenly">
+            <div class="col-md-2 mb-3 justify-content-center row">
+                <button class="btn btn-outline-info mt-4" id="b1">
+                    HTML
+                </button>
+                <button class="btn btn-outline-info mt-4" id="b2">
+                    CSS
+                </button>
+                <button class="btn btn-outline-info mt-4" id="b3">
+                    JS
+                </button>
+            </div>
+            <div class="col-md-10 mb-3" id="html">
                 <h5>HTML</h5>
                 <textarea id="html-editor" class="form-control" rows="10"></textarea>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-10 mb-3 d-none" id="css">
                 <h5>CSS</h5>
                 <textarea id="css-editor" class="form-control" rows="10"></textarea>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-10 mb-3 d-none" id="js">
                 <h5>JavaScript</h5>
                 <textarea id="js-editor" class="form-control" rows="10"></textarea>
             </div>
