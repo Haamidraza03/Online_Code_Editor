@@ -7,43 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-info">
-    <div class="container-fluid">
+<body>
+    <div class="container-fluid p-3 rounded-5">
         <div class="row justify-content-evenly">
             <div class="col-md-2 mb-3 justify-content-center row">
-                <button class="btn btn-outline-info mt-4" id="b1">
-                    HTML
+                <button class="btn text-white btn-danger mt-4 rounded-pill" id="b1">
+                    <b>HTML</b>
                 </button>
-                <button class="btn btn-outline-info mt-4" id="b2">
-                    CSS
+                <button class="btn btn-info text-dark mt-4 rounded-pill" id="b2">
+                    <b>CSS</b>
                 </button>
-                <button class="btn btn-outline-info mt-4" id="b3">
-                    JS
+                <button class="btn text-dark btn-warning mt-4 rounded-pill" id="b3">
+                    <b>JS</b>
                 </button>
             </div>
             <div class="col-md-10 mb-3" id="html">
-                <h5>HTML</h5>
-                <textarea id="html-editor" class="form-control" rows="10"></textarea>
+                <p class="text-danger text-center fs-4 m-0 mb-2"><b>HTML</b></p>
+                <textarea id="html-editor" class="form-control"></textarea>
             </div>
             <div class="col-md-10 mb-3 d-none" id="css">
-                <h5>CSS</h5>
-                <textarea id="css-editor" class="form-control" rows="10"></textarea>
+                <p class="text-info text-center fs-4 m-0 mb-2"><b>CSS</b></p>
+                <textarea id="css-editor" class="form-control"></textarea>
             </div>
             <div class="col-md-10 mb-3 d-none" id="js">
-                <h5>JavaScript</h5>
-                <textarea id="js-editor" class="form-control" rows="10"></textarea>
+                <p class="text-warning text-center fs-4 m-0 mb-2"><b>JavaScript</b></p>
+                <textarea id="js-editor" class="form-control"></textarea>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <p class="text-center fs-3 m-0 mb-1"><b>Preview</b></p>
-                <iframe id="preview" class="w-100 bg-white" style="height: 400px;"></iframe>
+                <iframe id="preview" class="w-100 bg-white rounded-4" style="height: 400px;"></iframe>
             </div>
         </div>
         <div class="row mt-2 mb-3">
             <div class="col-12 text-end">
-                <button id="download-btn" class="btn btn-outline-info">Download Code</button>
+                <center><button id="download-btn" class="btn btn-danger text-white rounded-pill px-4 fs-5">Download Code</button></center>
             </div>
         </div>
     </div>
