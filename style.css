@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(47, 40, 40) !important;
+    background-color: rgb(6, 2, 34) !important;
 }
 
 textarea {
@@ -14,4 +14,12 @@ h5 {
 iframe {
     border: 1px solid #ced4da;
     background-color: #fff;
+}
+
+.clip{
+    color: transparent;
+    position: relative;
+    background: linear-gradient(90deg, rgb(132, 0, 255) 0%, red 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }

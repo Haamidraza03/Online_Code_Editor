@@ -14,39 +14,43 @@
        
         <div class="row">
             <div class="col-12">
-                <p class="text-center text-white fs-3 m-0 mb-1"><b>Preview</b></p>
-                <iframe id="preview" class="w-100 bg-white rounded-4" style="height: 400px;"></iframe>
+                <p class="clip fs-1 text-center m-0"><b class="m-0">Online Code Editor</b></p>
+                <p class="text-center text-white fs-3 m-0"><b class="m-0">Preview</b></p>
+                <iframe id="preview" class="w-100 bg-white rounded-4" style="height: 300px;"></iframe>
             </div>
         </div>
        
         <div class="row justify-content-evenly">
             <div class="col-md-2 mb-3 justify-content-center row">
-                <button class="btn text-white btn-danger mt-4 rounded-pill" id="b1">
+                <button class="btn text-white btn-danger mt-5 rounded-3" id="b1">
                     <b>HTML</b>
                 </button>
-                <button class="btn btn-info text-dark mt-4 rounded-pill" id="b2">
+                <button class="btn btn-info text-dark mt-2 rounded-3" id="b2">
                     <b>CSS</b>
                 </button>
-                <button class="btn text-dark btn-warning mt-4 rounded-pill" id="b3">
+                <button class="btn text-dark btn-warning mt-2 rounded-3" id="b3">
                     <b>JS</b>
                 </button>
+                <a href="./java.html" class="btn text-white btn-success mt-2 d-flex text-center justify-content-center align-items-center rounded-3" id="b4">
+                    <b class="text-center">Java</b>
+                </a>
             </div>
             <div class="col-md-10 mb-3" id="html">
                 <p class="text-danger text-center fs-4 m-0 mb-2"><b>HTML</b></p>
-                <textarea id="html-editor" class="form-control"></textarea>
+                <textarea id="html-editor" class="form-control" rows="6"></textarea>
             </div>
             <div class="col-md-10 mb-3 d-none" id="css">
                 <p class="text-info text-center fs-4 m-0 mb-2"><b>CSS</b></p>
-                <textarea id="css-editor" class="form-control"></textarea>
+                <textarea id="css-editor" class="form-control" rows="6"></textarea>
             </div>
             <div class="col-md-10 mb-3 d-none" id="js">
                 <p class="text-warning text-center fs-4 m-0 mb-2"><b>JavaScript</b></p>
-                <textarea id="js-editor" class="form-control"></textarea>
+                <textarea id="js-editor" class="form-control" rows="6"></textarea>
             </div>
         </div>
-        <div class="row mt-2 mb-3">
+        <div class="row mt-1 mb-3">
             <div class="col-12 text-end">
-                <center><button id="download-btn" class="btn btn-danger text-white rounded-pill px-4 fs-5">Download Code</button></center>
+                <button id="download-btn" class="btn btn-danger text-white rounded-pill px-4 fs-5">Download Code</button>
             </div>
         </div>
     </div>
