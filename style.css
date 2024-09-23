@@ -27,3 +27,7 @@ iframe {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+a:hover{
+    font-weight: bolder !important;
+}
